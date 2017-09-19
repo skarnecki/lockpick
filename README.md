@@ -3,8 +3,11 @@
 Commandline tool for web application brute-force attack. 
 
 ## Usage
+Project use [golang/dep](https://github.com/golang/dep) to manage dependencies. 
 
-    go run main.go --address http://localhost:8080/login.php \
+    > dep ensure
+    
+    > go run main.go --address http://localhost:8080/login.php \
     --dictionary /tmp/dict.txt \
     --username admin \
     --message "User or password incorrect" \
